@@ -90,8 +90,6 @@ header nav {
 
 /* CONTAINER */
 
-
-
 .container {
     position: relative;
     display: grid;
@@ -152,7 +150,6 @@ header nav {
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     border: none;
-    /* z-index: 5; */
 }
 
 #btn-explore::before {
@@ -201,7 +198,6 @@ header nav {
         background-color: rgba(255, 255, 255, 0.534);
     }
 }
-
 
 /* DESTINATION  */
 
@@ -294,7 +290,6 @@ header nav {
     width: 100%;
     background-color: white;
 }
-
 
 
 h2 {
