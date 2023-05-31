@@ -11,7 +11,6 @@
 body {
     position: relative;
     background-image: url(assets/home/background-home-desktop.jpg);
-    /* background-image: url(assets/destination/background-destination-desktop.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
