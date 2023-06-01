@@ -10,7 +10,8 @@
 
 body {
     position: relative;
-    background-image: url(assets/home/background-home-desktop.jpg);
+    /* background-image: url(assets/home/background-home-desktop.jpg); */
+    background-image: url(assets/technology/background-technology-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,6 +26,7 @@ header nav {
     grid-template-columns: 5% 38% 57%;
     align-items: center;
     padding: 40px 0 0 40px;
+    height: 14vh;
 }
 
 .line {
@@ -92,7 +94,8 @@ header nav {
 
 .container {
     position: relative;
-    display: grid;
+    /* display: grid; */
+    display: none;
     grid-template-columns: 50% 50%;
     top: 40%;
     transform: translateY(-40%);
@@ -260,11 +263,13 @@ header nav {
     color: #D0D6F9;
 
 }
-.planete-nav li{
+
+.planete-nav li {
     position: relative;
     cursor: pointer;
 
 }
+
 .planete-nav li:hover::before {
     position: absolute;
     content: "";
@@ -275,6 +280,7 @@ header nav {
     width: 100%;
     background-color: white;
 }
+
 .active2 {
     position: relative;
 }
@@ -329,4 +335,149 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 20px;
+}
+
+
+/* CREEW */
+
+.container3 {
+    position: relative;
+    display: none;
+    /* display: grid; */
+    grid-template-columns: 50% 50%;
+}
+
+.crew {
+    height: 86vh;
+    padding: 25px 0px 25px 250px;
+    position: relative;
+}
+
+.crew h1 {
+    padding: 85px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Bellefair', serif;
+    font-size: 1.5rem;
+}
+
+.bold-number2 {
+    color: rgba(255, 255, 255, 0.615);
+}
+
+.infosCrew .job {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0;
+    color: #d0d6f9bd;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+
+.infosCrew .name {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+}
+
+.infosCrew p {
+    padding: 25px 125px 0 0;
+    line-height: 30px;
+    color: #d0d6f9bd;
+    font-size: 1.2rem;
+}
+
+/* span */
+
+.carousel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 30%;
+    height: auto;
+    /* height: 50px; */
+    align-items: center;
+    bottom: -10%;
+}
+
+.carousel span {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: #d0d6f94b;
+    bottom: -145%;
+    cursor: pointer;
+}
+
+.carousel span.active3 {
+    background-color: white;
+}
+
+/* img */
+
+.img-crew {
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 86vh;
+}
+
+.img-crew img {
+    position: absolute;
+    bottom: 1px;
+    width: 55%;
+    left: 30%;
+    transform: translateX(-45%);
+}
+
+.img-crew img[data-value="3"] {
+    position: absolute;
+    bottom: 1px;
+    width: 43%;
+    left: 30%;
+    transform: translateX(-45%);
+}
+
+
+/* TECHNOLOGY */
+
+.infomation-techno {
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 25px 0 0 150px;
+}
+
+.span-number {
+    display: grid;
+    position: relative;
+    /* grid-template-rows: ; */
+}
+
+.span-number span {
+    font-family: 'Bellefair', serif;
+
+    position: relative;
+    font-size: 2.1rem;
+    /* top: 100%; */
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    padding: 20px;
+    margin: 15px auto;
+    border: 1px solid #d0d6f96f;
+}
+
+.span-number span.active4 {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
 }
