@@ -29,15 +29,18 @@ function updateScreenWidth() {
   screenWidth = window.innerWidth;
 
   if (screenWidth < 700 && trueman == "0") {
+    container.style.display = "block";
     document.body.style.backgroundImage =
       "url(assets/home/background-home-mobile.jpg)";
   } else if (screenWidth < 950 && trueman == "0") {
+    container.style.display = "block";
     document.body.style.backgroundImage =
       "url(assets/home/background-home-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "0") {
+    container.style.display = "grid";
     document.body.style.backgroundImage =
       "url(assets/home/background-home-desktop.jpg)";
-  } else if (screenWidth < 950 && trueman == "1") {
+  } else if (screenWidth < 700 && trueman == "1") {
     document.body.style.backgroundImage =
       "url(assets/destination/background-destination-mobile.jpg)";
   } else if (screenWidth < 950 && trueman == "1") {
@@ -45,7 +48,7 @@ function updateScreenWidth() {
       "url(assets/destination/background-destination-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "1") {
     document.body.style.backgroundImage = "url(/1153148.jpg)";
-  } else if (screenWidth > 700 && trueman == "2") {
+  } else if (screenWidth < 700 && trueman == "2") {
     document.body.style.backgroundImage =
       "url(assets/crew/background-crew-mobile.jpg)";
   } else if (screenWidth < 950 && trueman == "2") {
@@ -82,10 +85,11 @@ lis.forEach((li) => {
 
       trueman = 0;
       if (screenWidth < 700) {
+        container.style.display = "block";
         document.body.style.backgroundImage =
           "url(assets/home/background-home-mobile.jpg)";
       } else if (screenWidth < 950) {
-        // document.body.style.display = "none";
+        container.style.display = "block";
         document.body.style.backgroundImage =
           "url(assets/home/background-home-tablet.jpg)";
       } else {

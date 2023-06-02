@@ -6,14 +6,12 @@
         font-size: 1.3rem !important;
         text-align: left !important;
         padding: 0px 0 0 25% !important;
-
     }
 
     #space {
         font-size: 7rem !important;
         text-align: left !important;
         padding: 30px 0 20px 25% !important;
-
     }
 
     .information p {
@@ -105,7 +103,6 @@
     .carousel {
         top: 75% !important;
     }
-   
 
     .carousel span {
         position: relative;
@@ -143,7 +140,6 @@
         font-size: 1.5rem !important;
         width: 65px !important;
         height: 65px !important;
-
     }
 
     .infos-tech {
@@ -161,17 +157,205 @@
     .infos-tech p {
         font-size: 1rem !important;
     }
+
     .img-techno img {
         margin-top: 50px;
     }
 
 }
+
 @media only screen and (max-width: 1250px) {
     .planete h1 {
         font-size: 1.15rem !important;
     }
 }
 
+@media only screen and (max-width: 950px) {
+    header nav {
+        grid-template-columns: 5% 28% 67% !important;
+    }
+
+    .nav-liste {
+        font-size: 0.8rem !important;
+    }
+    .bold {
+        font-size: 1rem !important;
+    }
+    .container {
+        grid-template-rows: none !important;
+        top: 25% !important;
+        transform: translateY(-25%) !important;
+        height: 80vh;
+    }
+    .title {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+        padding: 0px 0px 0% !important;
+    }
+
+    #space {
+        font-size: 6.5rem !important;
+        text-align: center !important;
+        padding: 40px 0 40px 0px !important;
+    }
+
+    .information p {
+        font-size: 1rem !important;
+        text-align: center;
+        padding: 0px 20% !important;
+    }
+
+    /* BUTTON */
+    #btn-explore {
+        bottom: 0% !important;
+        transform: translate(-50%, 50%) !important;
+    }
+
+    /* page 2 */
+
+    .container2 {
+        /* display: block !important; */
+        animation: myAnimation 0.5s ease-in-out forwards;
+        height: 80vh;
+    }
+    
+    .destination {
+        position: relative;
+        display: block !important;
+        grid-template-columns: none !important;
+    }
+    
+    .planete {
+        padding: 50px 0 0 50px !important;
+        text-align: left;
+        height: 250px;
+    }
+    
+    .planete h1 {
+        letter-spacing: 3px !important;
+        font-weight: 400;
+        padding-bottom: 50px;
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        font-size: 1.2rem !important;
+    }
+    
+    .bold-number {
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.615);
+    
+    }
+    
+    .img-planet {
+        position: relative;
+    }
+    
+    .img-planet img {
+        position: absolute;
+        left: 19% !important;
+        /* transform: translateX(50%) !important; */
+        text-align: center;
+        top: -20px !important;
+        width: 30% !important;
+        /* transform: translateX(40%) !important; */
+        animation: myAnimation2 0.8s ease-in-out forwards;
+    }
+    
+    /* infos-planete */
+    
+    .information-of-planete {
+        text-align: center;
+        padding: 15px 0 0 0 !important;
+    }
+    
+    .information-of-planete ul {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 250px !important;
+        text-transform: uppercase;
+        padding: 0 0 10px 0;
+        font-weight: 100;
+        font-size: 1.1rem !important;
+        color: #D0D6F9;
+    }
+    
+    .planete-nav li {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .planete-nav li:hover::before {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        left: 58%;
+        transform: translateX(-58%);
+        height: 3px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.551);
+    }
+    
+    .active2 {
+        position: relative;
+        color: white;
+    }
+    
+    .active2::before {
+        position: absolute;
+        content: "";
+        top: 40px;
+        bottom: 0px;
+        left: 58%;
+        transform: translateX(-58%);
+        height: 2.5px;
+        width: 100%;
+        background-color: white;
+    }
+    
+    
+    h2 {
+        font-size: 4.5rem !important;
+        letter-spacing: 7px;
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        padding: 40px 0;
+    }
+    
+    .allInfos {
+        margin: 0 20% 0 20% !important;
+        padding-bottom: 50px;
+        font-size: 1rem !important;
+        color: #D0D6F9;
+        border-bottom: 1px solid #d0d6f957;
+    }
+    
+    .other-infos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin: 0 7% 0 7% !important;
+    }
+    
+    .other-infos h3 {
+        font-size: 1rem !important;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #D0D6F9;
+    }
+    
+    .other-infos p {
+        font-family: 'Bellefair', serif;
+        font-size: 1.3rem !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+        animation: myAnimation3 0.5s ease-in-out forwards;
+    
+    }
+}
 
 
 
@@ -238,7 +422,7 @@ body {
     height: 100vh;
     background-color: rgb(0, 0, 0);
     font-family: 'Barlow Condensed', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header nav {
