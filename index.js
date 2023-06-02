@@ -71,7 +71,7 @@ function updateScreenWidth() {
     document.body.style.backgroundImage = "url(/920817.jpg)";
   }
 
-  if (screenWidth > 650) {
+  if (screenWidth > 650 && trueman == "3" && screenWidth < 950) {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-mobile.jpg)";
     imgTechno.innerHTML = `<img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">`;
