@@ -360,7 +360,7 @@ function activeFunction(x) {
   if (x === 1) {
     lis[x].classList.add("active");
     document.body.style.backgroundImage =
-      "url(assets/destination/background-destination-desktop.jpg)";
+      "url(../1153148.jpg)";
   }
 }
 

@@ -745,7 +745,7 @@ body {
     height: 100vh;
     background-color: rgb(0, 0, 0);
     font-family: 'Barlow Condensed', sans-serif;
-    overflow: hidden !important;
+    overflow: hidden ;
 }
 
 header nav {
