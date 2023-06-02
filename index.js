@@ -25,6 +25,8 @@ const imgPlanet = document.querySelector(".img-planet");
 const infostech = document.querySelector(".infos-tech");
 const imgTechno = document.querySelector(".img-techno");
 
+
+
 let number = 0;
 trueman = 0;
 
@@ -360,7 +362,7 @@ function activeFunction(x) {
   if (x === 1) {
     lis[x].classList.add("active");
     document.body.style.backgroundImage =
-      "url(../1153148.jpg)";
+      "url(/1153148.jpg)";
   }
 }
 
@@ -380,7 +382,6 @@ const sidebar = document.querySelector(".nav-liste.responsive");
 const svgClose = document.querySelector(".svg-close");
 const liResponsive = sidebar.querySelectorAll("li");
 
-console.log(liResponsive);
 
 btnNavbar.addEventListener("click", () => {
   sidebar.style.right = "0%";
