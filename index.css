@@ -36,8 +36,12 @@
 
     /* seconde page */
 
+    .container2 {
+        top: 8.5% !important;
+    }
+
     .planete {
-        padding: 75px 0 0 100px !important;
+        padding: 15px 0 0 100px !important;
     }
 
     .planete h1 {
@@ -49,25 +53,25 @@
     }
 
     .information-of-planete {
-        top: 5% !important;
+        top: 0% !important;
     }
 
     h2 {
-        font-size: 5.5rem !important;
+        font-size: 5rem !important;
         padding: 2% 0 !important;
     }
 
     .other-infos h3 {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
         padding: 15px 0 25px 0 !important;
     }
 
     .other-infos p {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
     }
 
     .information-of-planete ul {
-        width: 325px !important;
+        width: 300px !important;
     }
 
     /* page 3 */
@@ -81,7 +85,7 @@
     }
 
     .crew h1 {
-        padding: 75px 0px 25px 0 !important;
+        padding: 55px 0px 25px 0 !important;
         font-size: 1.4rem !important;
     }
 
@@ -151,7 +155,7 @@
     }
 
     .infos-tech h2 {
-        font-size: 2.65rem !important;
+        font-size: 2.35rem !important;
     }
 
     .infos-tech p {
@@ -178,15 +182,18 @@
     .nav-liste {
         font-size: 0.8rem !important;
     }
+
     .bold {
         font-size: 1rem !important;
     }
+
     .container {
         grid-template-rows: none !important;
         top: 25% !important;
         transform: translateY(-25%) !important;
         height: 80vh;
     }
+
     .title {
         font-size: 1.5rem !important;
         text-align: center !important;
@@ -214,146 +221,459 @@
     /* page 2 */
 
     .container2 {
-        /* display: block !important; */
-        animation: myAnimation 0.5s ease-in-out forwards;
+        position: relative;
         height: 80vh;
     }
-    
+
     .destination {
         position: relative;
         display: block !important;
         grid-template-columns: none !important;
     }
-    
+
     .planete {
-        padding: 50px 0 0 50px !important;
+        padding: 0px 0 0 50px !important;
         text-align: left;
         height: 250px;
     }
-    
+
     .planete h1 {
         letter-spacing: 3px !important;
-        font-weight: 400;
-        padding-bottom: 50px;
-        font-family: 'Bellefair', serif;
-        text-transform: uppercase;
         font-size: 1.2rem !important;
     }
-    
-    .bold-number {
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.615);
-    
-    }
-    
-    .img-planet {
-        position: relative;
-    }
-    
+
     .img-planet img {
-        position: absolute;
         left: 19% !important;
-        /* transform: translateX(50%) !important; */
         text-align: center;
         top: -20px !important;
         width: 30% !important;
-        /* transform: translateX(40%) !important; */
-        animation: myAnimation2 0.8s ease-in-out forwards;
     }
-    
-    /* infos-planete */
-    
+
     .information-of-planete {
         text-align: center;
-        padding: 15px 0 0 0 !important;
+        padding: 50px 0 0 0 !important;
     }
-    
+
     .information-of-planete ul {
         text-align: center;
         margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         width: 250px !important;
-        text-transform: uppercase;
-        padding: 0 0 10px 0;
-        font-weight: 100;
         font-size: 1.1rem !important;
-        color: #D0D6F9;
     }
-    
-    .planete-nav li {
-        position: relative;
-        cursor: pointer;
-    }
-    
-    .planete-nav li:hover::before {
-        position: absolute;
-        content: "";
-        bottom: -20px;
-        left: 58%;
-        transform: translateX(-58%);
-        height: 3px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.551);
-    }
-    
-    .active2 {
-        position: relative;
-        color: white;
-    }
-    
-    .active2::before {
-        position: absolute;
-        content: "";
-        top: 40px;
-        bottom: 0px;
-        left: 58%;
-        transform: translateX(-58%);
-        height: 2.5px;
-        width: 100%;
-        background-color: white;
-    }
-    
-    
+
     h2 {
         font-size: 4.5rem !important;
-        letter-spacing: 7px;
-        font-family: 'Bellefair', serif;
-        font-weight: 400;
-        padding: 40px 0;
     }
-    
+
     .allInfos {
         margin: 0 20% 0 20% !important;
-        padding-bottom: 50px;
+        padding-bottom: 25px !important;
         font-size: 1rem !important;
-        color: #D0D6F9;
-        border-bottom: 1px solid #d0d6f957;
     }
-    
+
     .other-infos {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
         margin: 0 7% 0 7% !important;
     }
-    
+
     .other-infos h3 {
         font-size: 1rem !important;
-        letter-spacing: 2px;
+    }
+
+    .other-infos p {
+        font-size: 1.3rem !important;
+    }
+
+    /* page 3 */
+
+    .container3 {
+        /* display: block !important; */
+        grid-template-columns: none !important;
+    }
+
+    .crew {
+        height: 40vh !important;
+        padding: 10px 0px 0px 0px !important;
+    }
+
+    .crew h1 {
+        padding: 20px 0 0 50px !important;
+        font-size: 1.1rem !important;
+    }
+
+    .infosCrew .job {
+        text-align: center;
+        font-size: 1.7rem !important;
+    }
+
+    .infosCrew .name {
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+
+    .infosCrew p {
+        padding: 25px 20% 0 20% !important;
+        text-align: center;
+    }
+
+    .carousel {
+        width: 50% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+    }
+
+    .carousel span {
+        margin-top: 70px;
+        place-self: center;
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    /* img */
+
+    .img-crew {
+        height: 46vh !important;
+    }
+
+    .img-crew img {
+        width: 34% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .img-crew img[data-value="3"] {
+        width: 29% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /*page 4 */
+
+    .container4 {
+        /* display: block !important; */
+        top: 15%;
+        transform: translateY(-15%);
+    }
+
+    .technology {
+        padding: 0px 50px !important;
+    }
+
+    .technology h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .infomation-techno {
+        display: flex !important;
+        flex-direction: column-reverse;
+        grid-template-columns: none !important;
+    }
+
+    .span-number {
+        display: flex !important;
+        justify-content: space-between;
+        padding: 5px 0 0 0 !important;
+        width: 40%;
+    }
+
+    .span-number span {
+        font-size: 1.4rem !important;
+        width: 65px !important;
+        height: 65px !important;
+        margin: 0px 0 !important;
+    }
+
+    .infos-tech {
+        text-align: center !important;
+        padding: 25px 0 0 0 !important;
+    }
+
+    .infos-tech h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .infos-tech h2 {
+        padding: 25px 0;
+        font-size: 2.5rem !important;
+    }
+
+    .infos-tech p {
+        padding: 0 0 25px 0 !important;
+        font-size: 0.9rem !important;
+        line-height: 30px;
+    }
+
+    .img-techno img {
+        width: 55% !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    header nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        grid-template-columns: none!important;
+        align-items: center;
+        padding: 40px 10px 0 20px !important;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block !important;
+    }
+
+    .nav-liste.responsive {
+        position: absolute;
+        display: block !important;
+        width: 70%;
+        height: 100%;
+        top: 0%;
+        right: -70%;
+        z-index: 999999999999;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .nav-liste.responsive li {
+        top: 5.5% !important;
+
+        padding: 20% 0 ;
+    }
+
+    .nav-liste.responsive .svg-close {
+        cursor: pointer;
+        position: relative;
+        left: 40%;
+        top: 2%;
+    }
+
+    .nav-liste {
+        position: relative;
+        display: none !important;
+        grid-template-columns: 22% 22% 22% 22%;
+        background-color: rgba(255, 255, 255, 0.071);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: 100;
-        color: #D0D6F9;
+        color: rgba(255, 255, 255, 0.615);
     }
-    
+
+    .title {
+        font-size: 1.1rem !important;
+        padding: 0px 2% !important;
+    }
+
+    #space {
+        font-size: 4rem !important;
+    }
+
+    .information p {
+        font-size: 0.8rem !important;
+        padding: 0px 5% !important;
+    }
+
+    #btn-explore {
+        width: 150px !important;
+        height: 150px !important;
+        font-size: 1.5rem !important;
+    }
+
+    #btn-explore::before {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #btn-explore:hover::before {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* page 2 */
+
+    .container2 {
+        position: relative;
+        height: 70vh !important;
+        top: 1.5% !important;
+    }
+
+    .planete {
+        padding: 0px 0 0 0px !important;
+        text-align: center;
+        height: 250px !important;
+    }
+
+    .planete h1 {
+        font-size: 0.9rem !important;
+    }
+
+    .img-planet img {
+        left: 5% !important;
+        text-align: center;
+        top: 0px !important;
+        width: 50% !important;
+    }
+
+    .information-of-planete {
+        padding: 20% 0 !important;
+    }
+
+    .information-of-planete ul {
+        width: 60% !important;
+        font-size: 0.95rem !important;
+    }
+
+    h2 {
+        font-size: 3rem !important;
+    }
+
+    .allInfos {
+        margin: 0 10% 0 10% !important;
+        padding-bottom: 25px !important;
+        font-size: 1rem !important;
+    }
+
+    .other-infos h3 {
+        font-size: 0.8rem !important;
+    }
+
     .other-infos p {
-        font-family: 'Bellefair', serif;
-        font-size: 1.3rem !important;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding-bottom: 20px;
-        animation: myAnimation3 0.5s ease-in-out forwards;
-    
+        font-size: 1rem !important;
+    }
+
+    /* page 3 */
+
+    .crew {
+        height: 55vh !important;
+        padding: 10px 0px 0px 0px !important;
+    }
+
+    .crew h1 {
+        padding: 20px 0 0 0px !important;
+        font-size: 1.1rem !important;
+        text-align: center;
+    }
+
+    .infosCrew .job {
+        font-size: 1.4rem !important;
+    }
+
+    .infosCrew .name {
+        font-size: 2rem !important;
+    }
+
+    .infosCrew p {
+        padding: 25px 5% 0 5% !important;
+        font-size: 1rem !important;
+    }
+
+    .carousel {
+        width: 50% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+    }
+
+    .carousel span {
+        margin-top: 50px;
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .img-crew {
+        height: 31vh !important;
+    }
+
+    .img-crew img {
+        width: 40% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .img-crew img[data-value="3"] {
+        width: 35% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /*page 4 */
+
+    .container4 {
+        /* display: block !important; */
+        top: 15% !important;
+        transform: translateY(-15%);
+    }
+
+    .technology {
+        padding: 0px 0px !important;
+        text-align: center
+    }
+
+    .technology h1 {
+        font-size: 1.2rem !important;
+    }
+
+    .span-number {
+        padding: 0px 0 0 0 !important;
+        width: 60%;
+    }
+
+    .span-number span {
+        font-size: 1.1rem !important;
+        width: 50px !important;
+        height: 50px !important;
+        margin: 0px 0 0px 0 !important;
+        padding: 15px 0 0px 1px !important;
+    }
+
+    .infos-tech {
+        padding: 25px 10% 0 10% !important;
+    }
+
+    .infos-tech h3 {
+        font-size: 1rem !important;
+    }
+
+    .infos-tech h2 {
+        padding: 25px 0;
+        font-size: 1.5rem !important;
+    }
+
+    .infos-tech p {
+        padding: 0 0 25px 0 !important;
+        font-size: 0.75rem !important;
+    }
+
+    .img-techno {
+        /* height: 240px; */
+    }
+
+    .img-techno img {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .img-crew img {
+        width: 50% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .img-crew img[data-value="3"] {
+        width: 50% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .nav-liste.responsive li {
+        top: 1.5%;
+        padding: 33% 0 !important;
     }
 }
 
@@ -422,22 +742,48 @@ body {
     height: 100vh;
     background-color: rgb(0, 0, 0);
     font-family: 'Barlow Condensed', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 header nav {
     display: grid;
     grid-template-columns: 5% 38% 57%;
+    justify-content: center;
     align-items: center;
     padding: 40px 0 0 40px;
     height: 14vh;
+    z-index: 9;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    width: 50%;
+    height: 100%;
+    z-index: 99999999999999999999;
+}
+.nav-liste.responsive{
+    /* display: none; */
+}
+.toggle-btn span {
+    /* display: none;  */
+    position: relative;
+    width: 650%;
+    height: 8px;
+    background-color: rgb(99, 99, 99);
+    top: 18%;
+    left: 20%;
+    transform: translate(-18%, -10%);
+    margin: 10px;
+    border-radius: 25px;
 }
 
 .line {
     width: 105%;
     height: 2px;
     background-color: rgba(128, 128, 128, 0.304);
-    z-index: 99;
+    z-index: 9;
 }
 
 .nav-liste {
@@ -608,6 +954,7 @@ header nav {
 .container2 {
     display: none;
     animation: myAnimation 0.5s ease-in-out forwards;
+    position: relative;
 }
 
 .destination {
@@ -632,7 +979,6 @@ header nav {
 .bold-number {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.615);
-
 }
 
 .img-planet {
@@ -653,7 +999,7 @@ header nav {
 .information-of-planete {
     position: relative;
     top: 20%;
-    transform: translateY(20%);
+    transform: translateY(10%);
     height: auto;
 }
 
@@ -672,7 +1018,6 @@ header nav {
 .planete-nav li {
     position: relative;
     cursor: pointer;
-
 }
 
 .planete-nav li:hover::before {
@@ -753,16 +1098,17 @@ h2 {
     /* display: grid; */
     grid-template-columns: 50% 50%;
     animation: myAnimation 0.5s ease-in-out forwards;
+    top: 0%;
 }
 
 .crew {
-    height: 86vh;
-    padding: 25px 0px 25px 250px;
     position: relative;
+    height: 86vh;
+    padding: 0 0 0 150px;
 }
 
 .crew h1 {
-    padding: 85px 0px;
+    padding: 50px 0px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
@@ -806,7 +1152,7 @@ h2 {
     grid-template-columns: 25% 25% 25% 25%;
     width: 30%;
     align-items: center;
-    bottom: 10%;
+    bottom: 7%;
 }
 
 .carousel span {
@@ -858,13 +1204,13 @@ h2 {
 .container4 {
     display: none;
     position: relative;
-    top: 15%;
+    top: 20%;
     transform: translateY(-15%);
     animation: myAnimation 0.5s ease-in-out forwards;
 }
 
 .technology {
-    padding: 50px 0 0 250px;
+    padding: 25px 0 0 250px;
 }
 
 .technology h1 {
@@ -896,7 +1242,6 @@ h2 {
     font-family: 'Bellefair', serif;
     position: relative;
     font-size: 2.1rem;
-    /* margin: auto; */
     width: 75px;
     height: 75px;
     background-color: rgba(255, 255, 255, 0);
@@ -905,7 +1250,6 @@ h2 {
     margin: 15px 0;
     border: 1px solid #d0d6f96f;
     animation: myAnimation4 0.5s ease-in-out forwards;
-
 }
 
 .span-number span:hover {
@@ -937,7 +1281,6 @@ h2 {
     font-size: 1.2rem;
     letter-spacing: 2px;
     animation: myAnimation4 0.4s ease-in-out forwards;
-
 }
 
 .span-number span.active4 {

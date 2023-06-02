@@ -22,13 +22,16 @@ const traveltime = document.querySelector(".travel-time");
 const distance = document.querySelector(".distance");
 const imgPlanet = document.querySelector(".img-planet");
 
+const infostech = document.querySelector(".infos-tech");
+const imgTechno = document.querySelector(".img-techno");
+
 let number = 0;
 trueman = 0;
 
 function updateScreenWidth() {
   screenWidth = window.innerWidth;
 
-  if (screenWidth < 700 && trueman == "0") {
+  if (screenWidth < 650 && trueman == "0") {
     container.style.display = "block";
     document.body.style.backgroundImage =
       "url(assets/home/background-home-mobile.jpg)";
@@ -40,7 +43,7 @@ function updateScreenWidth() {
     container.style.display = "grid";
     document.body.style.backgroundImage =
       "url(assets/home/background-home-desktop.jpg)";
-  } else if (screenWidth < 700 && trueman == "1") {
+  } else if (screenWidth < 650 && trueman == "1") {
     document.body.style.backgroundImage =
       "url(assets/destination/background-destination-mobile.jpg)";
   } else if (screenWidth < 950 && trueman == "1") {
@@ -48,7 +51,7 @@ function updateScreenWidth() {
       "url(assets/destination/background-destination-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "1") {
     document.body.style.backgroundImage = "url(/1153148.jpg)";
-  } else if (screenWidth < 700 && trueman == "2") {
+  } else if (screenWidth < 650 && trueman == "2") {
     document.body.style.backgroundImage =
       "url(assets/crew/background-crew-mobile.jpg)";
   } else if (screenWidth < 950 && trueman == "2") {
@@ -57,15 +60,28 @@ function updateScreenWidth() {
   } else if (screenWidth > 950 && trueman == "2") {
     document.body.style.backgroundImage =
       "url(assets/crew/background-crew-desktop.jpg)";
-  } else if (screenWidth < 700 && trueman == "3") {
+  } else if (screenWidth < 650 && trueman == "3") {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-mobile.jpg)";
+    imgTechno.innerHTML = ` <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="">`;
   } else if (screenWidth < 950 && trueman == "3") {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "3") {
     document.body.style.backgroundImage = "url(/920817.jpg)";
   }
+
+  if (screenWidth > 650) {
+    document.body.style.backgroundImage =
+      "url(assets/technology/background-technology-mobile.jpg)";
+    imgTechno.innerHTML = `<img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">`;
+    
+  } // A MODIFIER BUG RESPONSIVE 
+
+
+  // if (screenWidth > 650) {
+  //   btnNavbar.style.display = "block";
+  // }
 }
 
 // "NAVBAR" PRINCIPAL
@@ -84,7 +100,7 @@ lis.forEach((li) => {
       li.classList.add("active");
 
       trueman = 0;
-      if (screenWidth < 700) {
+      if (screenWidth < 650) {
         container.style.display = "block";
         document.body.style.backgroundImage =
           "url(assets/home/background-home-mobile.jpg)";
@@ -103,7 +119,7 @@ lis.forEach((li) => {
       container3.style.display = "none";
       container4.style.display = "none";
       li.classList.add("active");
-      if (screenWidth < 700) {
+      if (screenWidth < 650) {
         document.body.style.backgroundImage =
           "url(assets/destination/background-destination-mobile.jpg)";
       } else if (screenWidth < 950) {
@@ -119,7 +135,7 @@ lis.forEach((li) => {
       container3.style.display = "grid";
       container4.style.display = "none";
       li.classList.add("active");
-      if (screenWidth < 700) {
+      if (screenWidth < 650) {
         document.body.style.backgroundImage =
           "url(assets/crew/background-crew-mobile.jpg)";
       } else if (screenWidth < 950) {
@@ -136,7 +152,7 @@ lis.forEach((li) => {
       container3.style.display = "none";
       container4.style.display = "grid";
       li.classList.add("active");
-      if (screenWidth < 700) {
+      if (screenWidth < 650) {
         document.body.style.backgroundImage =
           "url(assets/technology/background-technology-mobile.jpg)";
       } else if (screenWidth < 950) {
@@ -275,10 +291,7 @@ spans.forEach(function (span) {
   });
 });
 
-// "NAVBAR" CREW
-
-const infostech = document.querySelector(".infos-tech");
-const imgTechno = document.querySelector(".img-techno");
+// "NAVBAR" techno
 
 numberTechno.forEach((number) => {
   number.addEventListener("click", () => {
@@ -300,6 +313,10 @@ numberTechno.forEach((number) => {
       `;
       imgTechno.style.animation = "myAnimation 0.5s ease-in-out forwards";
       imgTechno.innerHTML = `<img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">`;
+
+      if (screenWidth < 650) {
+        imgTechno.innerHTML = `<img src="assets/technology/image-launch-vehicle-landscape.jpg" alt=""></img>`;
+      }
     } else if (number.textContent == "2") {
       number.classList.add("active4");
       infostech.innerHTML = `
@@ -312,6 +329,10 @@ numberTechno.forEach((number) => {
       `;
       imgTechno.style.animation = "myAnimation 0.5s ease-in-out forwards";
       imgTechno.innerHTML = `<img src="assets/technology/image-spaceport-portrait.jpg" alt="">`;
+
+      if (screenWidth < 650) {
+        imgTechno.innerHTML = `<img src="assets/technology/image-spaceport-landscape.jpg" alt=""></img>`;
+      }
     } else {
       number.classList.add("active4");
       infostech.innerHTML = `
@@ -324,6 +345,9 @@ numberTechno.forEach((number) => {
       `;
       imgTechno.style.animation = "myAnimation 0.5s ease-in-out forwards";
       imgTechno.innerHTML = `<img src="assets/technology/image-space-capsule-portrait.jpg" alt="">`;
+      if (screenWidth < 650) {
+        imgTechno.innerHTML = `<img src="assets/technology/image-space-capsule-landscape.jpg" alt=""></img>`;
+      }
     }
   });
 });
@@ -350,3 +374,55 @@ exploreBtn.addEventListener("click", () => {
 window.addEventListener("resize", updateScreenWidth);
 
 updateScreenWidth();
+
+const btnNavbar = document.querySelector(".toggle-btn");
+const sidebar = document.querySelector(".nav-liste.responsive");
+const svgClose = document.querySelector(".svg-close");
+const liResponsive = sidebar.querySelectorAll("li");
+
+console.log(liResponsive);
+
+btnNavbar.addEventListener("click", () => {
+  sidebar.style.right = "0%";
+
+  svgClose.addEventListener("click", () => {
+    sidebar.style.right = "-70%";
+  });
+
+  liResponsive.forEach((li) => {
+    li.addEventListener("click", (e) => {
+      sidebar.style.right = "-70%";
+      updateScreenWidth();
+
+      if (li.textContent.split(" ")[0] == "00") {
+        trueman = 0;
+
+        container.style.display = "block";
+        container2.style.display = "none";
+        container3.style.display = "none";
+        container4.style.display = "none";
+      } else if (li.textContent.split(" ")[0] == "01") {
+        trueman = 1;
+
+        container.style.display = "none";
+        container2.style.display = "block";
+        container3.style.display = "none";
+        container4.style.display = "none";
+      } else if (li.textContent.split(" ")[0] == "02") {
+        trueman = 2;
+
+        container.style.display = "none";
+        container2.style.display = "none";
+        container3.style.display = "block";
+        container4.style.display = "none";
+      } else {
+        trueman = 3;
+
+        container.style.display = "none";
+        container2.style.display = "none";
+        container3.style.display = "none";
+        container4.style.display = "block";
+      }
+    });
+  });
+});
