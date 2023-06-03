@@ -161,7 +161,7 @@ lis.forEach((li) => {
         document.body.style.backgroundImage =
           "url(assets/technology/background-technology-tablet.jpg)";
       } else {
-        document.body.style.backgroundImage = "url(/920817.jpg)";
+        document.body.style.backgroundImage = "url(./920817.jpg)";
       }
     }
   });
@@ -177,7 +177,7 @@ liPlanete.forEach((li) => {
       allInfos.offsetHeight;
     });
 
-    if (li.textContent == "Moon") {
+    if (li.textContent == "Moon" || li.textContent == "Lune") {
       li.classList.add("active2");
       imgPlanet.innerHTML = `<img src="./assets/destination/image-moon.png" alt="">`;
       nameOfPlanete.textContent = "MOON";
@@ -189,16 +189,16 @@ liPlanete.forEach((li) => {
       distance.textContent = "3 DAYS";
     } else if (li.textContent == "Mars") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="assets/destination/image-mars.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="/assets/destination/image-mars.png" alt="">`;
       nameOfPlanete.textContent = "MARS";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons,the tallest planetary mountain in our solar system. It's two and a half times
       the size of Everest !`;
       traveltime.textContent = "225 mil. km";
       distance.textContent = "9 months";
-    } else if (li.textContent == "Europa") {
+    } else if (li.textContent == "Europa" || li.textContent == "Europe") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="../assets/destination/image-europa.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="/assets/destination/image-europa.png" alt="">`;
       nameOfPlanete.textContent = "EUROPA";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `The smallest of the four Galilean moons orbiting Jupiter, Europa is a
