@@ -70,7 +70,7 @@ function updateScreenWidth() {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "3") {
-    document.body.style.backgroundImage = "url(./920817.jpg)";
+    document.body.style.backgroundImage = "url(/920817.jpg)";
   }
 
   if (screenWidth > 650 && trueman == "3" && screenWidth < 950) {
