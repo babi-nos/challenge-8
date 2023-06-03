@@ -70,7 +70,7 @@ function updateScreenWidth() {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "3") {
-    document.body.style.backgroundImage = "url(/920817.jpg)";
+    document.body.style.backgroundImage = "url(./920817.jpg)";
   }
 
   if (screenWidth > 650 && trueman == "3" && screenWidth < 950) {
@@ -81,9 +81,6 @@ function updateScreenWidth() {
   } // A MODIFIER BUG RESPONSIVE 
 
 
-  // if (screenWidth > 650) {
-  //   btnNavbar.style.display = "block";
-  // }
 }
 
 // "NAVBAR" PRINCIPAL
@@ -128,7 +125,7 @@ lis.forEach((li) => {
         document.body.style.backgroundImage =
           "url(assets/destination/background-destination-tablet.jpg)";
       } else {
-        document.body.style.backgroundImage = "url(/1153148.jpg)";
+        document.body.style.backgroundImage = "url(./1153148.jpg)";
       }
     } else if (li.textContent.split(" ")[0] == "02") {
       trueman = 2;
