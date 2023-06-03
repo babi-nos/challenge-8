@@ -52,7 +52,7 @@ function updateScreenWidth() {
     document.body.style.backgroundImage =
       "url(assets/destination/background-destination-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "1") {
-    document.body.style.backgroundImage = "url(/1153148.jpg)";
+    document.body.style.backgroundImage = "url(./1153148.jpg)";
   } else if (screenWidth < 650 && trueman == "2") {
     document.body.style.backgroundImage =
       "url(assets/crew/background-crew-mobile.jpg)";
@@ -70,7 +70,7 @@ function updateScreenWidth() {
     document.body.style.backgroundImage =
       "url(assets/technology/background-technology-tablet.jpg)";
   } else if (screenWidth > 950 && trueman == "3") {
-    document.body.style.backgroundImage = "url(/920817.jpg)";
+    document.body.style.backgroundImage = "url(920817.jpg)";
   }
 
   if (screenWidth > 650 && trueman == "3" && screenWidth < 950) {
@@ -186,7 +186,7 @@ liPlanete.forEach((li) => {
       distance.textContent = "3 DAYS";
     } else if (li.textContent == "Mars") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="/assets/destination/image-mars.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="./assets/destination/image-mars.png" alt="">`;
       nameOfPlanete.textContent = "MARS";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons,the tallest planetary mountain in our solar system. It's two and a half times
@@ -195,7 +195,7 @@ liPlanete.forEach((li) => {
       distance.textContent = "9 months";
     } else if (li.textContent == "Europa" || li.textContent == "Europe") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="/assets/destination/image-europa.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="./assets/destination/image-europa.png" alt="">`;
       nameOfPlanete.textContent = "EUROPA";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `The smallest of the four Galilean moons orbiting Jupiter, Europa is a
