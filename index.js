@@ -179,7 +179,7 @@ liPlanete.forEach((li) => {
 
     if (li.textContent == "Moon") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="assets/destination/image-moon.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="./assets/destination/image-moon.png" alt="">`;
       nameOfPlanete.textContent = "MOON";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `See our planet as you've never seen it before. A perfect relaxing trip away to help
@@ -198,7 +198,7 @@ liPlanete.forEach((li) => {
       distance.textContent = "9 months";
     } else if (li.textContent == "Europa") {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="assets/destination/image-europa.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="../assets/destination/image-europa.png" alt="">`;
       nameOfPlanete.textContent = "EUROPA";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `The smallest of the four Galilean moons orbiting Jupiter, Europa is a
@@ -209,7 +209,7 @@ liPlanete.forEach((li) => {
       distance.textContent = "3 years";
     } else {
       li.classList.add("active2");
-      imgPlanet.innerHTML = `<img src="assets/destination/image-titan.png" alt="">`;
+      imgPlanet.innerHTML = `<img src="./assets/destination/image-titan.png" alt="">`;
       nameOfPlanete.textContent = "TITAN";
       allInfos.style.animation = "myAnimation 0.5s ease-in-out forwards";
       allInfos.textContent = `The only moon known to have a dense atmosphere other than Earth, Titan
